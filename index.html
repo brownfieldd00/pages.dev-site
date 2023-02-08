@@ -1,134 +1,195 @@
 <html>
   <head>
     <title>brownfieldd00's scripter (the real)</title>
-    <meta name="google-site-verification" content="ClAM5JqYyxCghHiYxRRFf99jcmkrJyLcCfLZ4QDZlyA" />
-    <link rel="icon" href="https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50">
-    <meta property="og:type" content="website">
+    <meta
+      name="google-site-verification"
+      content="ClAM5JqYyxCghHiYxRRFf99jcmkrJyLcCfLZ4QDZlyA"
+    />
+    <link
+      rel="icon"
+      href="https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50"
+    />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="KXWISH scripter" />
-    <meta property="og:description" content="KXWISH script assistance: All information on this website (list of scripts / contacts)" />
+    <meta
+      property="og:description"
+      content="KXWISH script assistance: All information on this website (list of scripts / contacts)"
+    />
     <meta property="og:url" content="https://kxwish.pages.dev/" />
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50" />
+    <meta
+      property="og:image"
+      content="https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50"
+    />
   </head>
-  <body style="background-image: url('https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50'); background-color: rgb(199, 129, 129);">
+  <body>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
       body {
-        font-family: Arial;
-        padding: 20px;
-        background: #f1f1f1;
+        padding: 0;
+        margin: 0;
+        background: #2e2e2e url("https://cdn.discordapp.com/attachments/1049884679060332547/1072728767371432008/background.jpg") repeat-x;
+        color: #fff;
+        font-family: arial, verdana, helvetica, tahoma, sans-serif;
+        font-size: 80%;
       }
 
-      /* Header/Blog Title */
-      .header {
-        padding: 30px;
-        font-size: 40px;
-        text-align: center;
-        background: white;
+      a {
+        text-decoration: none;
+        color: #f06;
       }
 
-      /* Create two unequal columns that floats next to each other */
-      /* Left column */
-      .leftcolumn {
-        float: left;
-        width: 75%;
+      a:hover {
+        text-decoration: none;
+        color: #000;
       }
 
-      /* Right column */
-      .rightcolumn {
-        float: left;
-        width: 25%;
-        padding-left: 20px;
-      }
-
-      /* Fake image */
-      .fakeimg {
-        background-color: #aaa;
+      #centrecontainer {
+        position: absolute;
+        top: 50%;
+        left: 0px;
         width: 100%;
+      }
+
+      #outercontainer {
+        margin-left: -390px;
+        position: absolute;
+        top: -230px;
+        left: 50%;
+      }
+
+      #header {
+        width: 780px;
+        height: 50px;
+        background-image: url("https://cdn.discordapp.com/attachments/1049884679060332547/1072728480992722964/header-background.jpg");
+        background-repeat: no-repeat;
+      }
+
+      #headertitle {
+        float: left;
+        width: 280px;
+        height: 50px;
+      }
+
+      #header h1 {
+        margin: 0;
+        padding: 11px 0 0 10px;
+        color: #2e2e2e;
+        font-size: 200%;
+        letter-spacing: -2px;
+        font-weight: normal;
+      }
+
+      #header sup {
+        color: #f06;
+        letter-spacing: -1px;
+      }
+
+      #headermenu {
+        float: right;
+        width: 500px;
+        height: 50px;
+      }
+
+      #headermenu ul {
+        margin: 20px 0 0 0;
+        padding: 0;
+        text-align: right;
+        font-size: 110%;
+        font-weight: bold;
+        letter-spacing: -1px;
+      }
+
+      #headermenu li {
+        display: inline;
+        margin-left: 20px;
+      }
+
+      #headermenu li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #headermenu li a:hover {
+        text-decoration: none;
+        color: #f06;
+      }
+
+      #container {
+        border: 10px solid #fff;
+        width: 760px;
+        height: 350px;
+        background: #2e2e2e url("https://cdn.discordapp.com/attachments/1049884679060332547/1072728623347412992/container-background.jpg");
+      }
+
+      #containertext {
+        float: right;
+        overflow: auto;
         padding: 20px;
+        width: 720px;
+        height: 310px;
+        line-height: 120%;
       }
 
-      /* Add a card effect for articles */
-      .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
+      #containertext p {
+        margin: 0 0 10px 0;
+        padding: 0;
+        color: #ccc;
       }
 
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
+      #containertext h1,
+      #containertext h2,
+      #containertext h3 {
+        margin: 10px 0;
+        padding: 0px;
+        color: #fff;
+        font-size: 175%;
+        letter-spacing: -1px;
+        font-weight: normal;
       }
 
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-        margin-top: 20px;
+      #footer {
+        width: 780px;
+        height: 50px;
+        background: #2e2e2e url("https://cdn.discordapp.com/attachments/1049884679060332547/1072728676602495026/footer-background.jpg");
       }
 
-      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 800px) {
-        .leftcolumn,
-        .rightcolumn {
-          width: 100%;
-          padding: 0;
-        }
+      #footer p {
+        margin: 0;
+        padding: 10px 24px 0 0;
+        text-align: right;
+        color: #333;
+        letter-spacing: -1px;
       }
     </style>
-    <div class="header">
-      <h2>KXWISH script assistant</h2>
-    </div>
-    <div class="row">
-      <div class="leftcolumn">
-        <div class="card">
-          <h2>Discord server</h2>
-          <h5>Jan, 19, 2023</h5>
-          <p>server doesn't have a lot of stuff but you can join it: <a target="_blank" href="https://discord.gg/sgK28XyUD8">https://discord.gg/sgK28XyUD8</a></p>
+    <div id="centrecontainer">
+      <div id="outercontainer">
+        <div id="header">
+          <div id="headertitle">
+            <h1>KXWISH<sup> #7254</sup></h1>
+          </div>
+          <div id="headermenu">
+            <ul>
+              <li><a href="https://github.com/brownfieldd00">My Github</a></li>
+              <li><a href="https://github.com/brownfieldd00/Roblox/tree/main/Games">My Scripts</a></li>
+              <li><a href="https://discord.gg/sgK28XyUD8">Discord Server</a></li>
+              <li><a href="https://discord.com/users/339756016621060107">Discord Profile</a></li>
+              <!--<li><a href="#">link five</a></li>-->
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="leftcolumn">
-        <div class="card">
-          <h2>leaked bacon hub keys</h2>
-          <h5>Jan, 28, 2023</h5>
-          <p>Here is the list of keys: <a target="_blank" href="https://cdn.discordapp.com/attachments/1052856242302881804/1069000307222249492/message.txt">txt attachment</a></p>
+        <div id="container">
+          <div id="containertext">
+            <h1>Who am I?</h1>
+            <p>My name is David (KXWISH). I'm a programmer (Yes you can request scripts for ROBLOX in my <a href="https://discord.gg/sgK28XyUD8">Discord server</a>)</p>
+            <h2>Can you make me a script?</h2>
+            <p>Yes I can make a script for you, let me know what you want in the #script-requests channel.</p>
+            <h3>You still got questions?</h3>
+            <p>Come talk to me on Discord if you got any questions. I'll be happy to answer you. <a href="https://discord.com/users/339756016621060107">Profile</a></p>
+          </div>
         </div>
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>About Me</h2>
-          <p>I make scripts in lua and do cool stuff in python</p>
-        </div>
-        <div class="card">
-          <h3>Scripts: <a href="https://github.com/brownfieldd00/Roblox/tree/main/Games">go on GitHub</a></h3>
-          
-        </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p> nah bruh dont follow me </p>
+        <div id="footer">
+          <p>Approved by my momma and pops</p>
         </div>
       </div>
     </div>
-
-    <div class="footer">
-      <h2>if you want something dm me discord <a href='https://discord.com/users/339756016621060107'>here</a><small> yes i stole the html design from <a href="https://www.w3schools.com/howto/howto_css_blog_layout.asp">w3schools</a></a></small></h2>
-    </div>
-    <script>
-        let k = 0
-        setInterval(() => {
-            if(k == 0) {
-                k = 2
-                document.body.style.backgroundImage = 'url("https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=100&height=100")'
-            } else {
-                k = 0
-                document.body.style.backgroundImage = 'url("https://media.discordapp.net/attachments/1062485089252020305/1065853442045775922/high_quality.png?width=50&height=50")'
-            }
-        }, 1200)
-    </script>
   </body>
 </html>
